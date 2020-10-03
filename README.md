@@ -1,4 +1,4 @@
-# Python_Self_Coded_Non_AI_Windows_Voice_Control
+# Python_Non_AI_Windows_Voice_Control
 Python 3.8.5 was used during creation and local debugging.
 A python code which accepts commands as audio and then executes a command from the commands the programmer has included in the code. 
 The code is executable only from the command terminal. 
