@@ -6,4 +6,4 @@
 # Required PATH values
 -Enter additional PATH values below-
 # Additional INFO
--Enter any additional info below-
+-Enter any additional info below in points(must be easily understandable)-
