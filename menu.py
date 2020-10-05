@@ -3,19 +3,19 @@ import pyaudio
 import speech_recognition as sr
 import pyttsx3
 r=sr.Recognizer()
-r.dynamic_energy_threshold = False
+r.dynamic_energy_threshold = False  //use a constant energy threshold
 username=""
 command=""
 loc=""
 name=""
-valid=False
+valid=False  //stores validity to enable the generation of suitable message if no matching command is found
 engine= pyttsx3.init()
-engine.setProperty('voice',engine.getProperty('voices')[1].id)
-engine.setProperty('rate',engine.getProperty('rate')-10)
+engine.setProperty('voice',engine.getProperty('voices')[1].id) //use female voice
+engine.setProperty('rate',engine.getProperty('rate')-10)  //humanize voice through slower speech
 os.system("cls")
 pyttsx3.speak("good day")
 pyttsx3.speak("what should i call you")
-print("Your name?")
+print("Your name?")  
 username=input()
 pyttsx3.speak("okay")
 pyttsx3.speak(username)
@@ -25,7 +25,7 @@ while(True):
 	pyttsx3.speak("what do you want me to do")
 	with sr.Microphone() as source:
     		print('What do you want me to do?')
-    		command=r.recognize_google(r.listen(source,timeout=5))
+    		command=r.recognize_google(r.listen(source,timeout=5))  //provided timeout for efficient debugging 
     		print('Command heard')
 	command=command.lower()
 	if not (("don't" in command) or ("do not" in command)):
