@@ -19,6 +19,20 @@ def typekube():
     command=input("Enter the command: ")
     os.system(command)
 
+def typeeks():
+    command=input("Enter the command: ")
+    os.system(command)
+
+def sayeks():
+    with sr.Microphone() as source:
+        print('Say the command')
+        command=r.recognize_google(r.listen(source,timeout=5)) 
+        print('Command heard')
+
+    command=command.lower()
+    print(command)
+    os.system(command)
+
 def main(): 
 	username=""
 	command=""
@@ -206,6 +220,29 @@ def main():
 			if ('IP' in command) or ('IP' in command and 'configuration' in command):
 			    os.system("ipconfig")
 			    valid=True
+
+			elif ('eks' in command) or ('eksctl' in command) or ('Elastic Kubernetes Service' in command):
+				print("Do you want to type the command or say it?")
+				pyttsx3.speak("Do you want to type the command or say it?")
+				while True:
+					with sr.Microphone() as source:
+						command=r.recognize_google(r.listen(source,timeout=5)) 
+						print('Command heard')
+					if 'type' in command:
+						print("Type it:")
+						pyttsx3.speak("Type it")
+						typeeks()
+						break
+
+					elif 'say' in command:
+						print("Say it:")
+						pyttsx3.speak("Say it")
+						sayeks()
+						break
+
+					else:
+						print("Please say it again...")
+						pyttsx3.speak("Please say it again...")
 
 			if ("exit" in command) or ("stop" in command) or ("bye" in command):
 				pyttsx3.speak("bye")
