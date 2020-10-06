@@ -6,6 +6,7 @@
 - The code is executable only from the command terminal. 
 - Please add the required PATH environment variable names in the README file. I haven't used any commands requiring additional PATH values, but be sure to have python3 in your PATH values as you will require it to run this via the CMD.
 # Required PATH values
--Enter additional PATH values below-
+<Minikube installation location>/minikube/minikube
+<Kubectl installation location>/kubectl
 # Additional INFO
 -Enter any additional info below in points(must be easily understandable)-
