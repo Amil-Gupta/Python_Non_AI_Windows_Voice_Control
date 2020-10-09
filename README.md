@@ -10,3 +10,4 @@
 - [Kubectl installation location]/kubectl
 # Additional INFO
 -Enter any additional info below in points(must be easily understandable)-
+-Python and its broad variety of libraries are very well suited to develop customized machine learning tools which tackle the complex challenges posed by financial time series.
