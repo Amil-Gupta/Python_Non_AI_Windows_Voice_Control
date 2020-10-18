@@ -11,3 +11,4 @@
 # Additional INFO
 -Enter any additional info below in points(must be easily understandable)-
 - Python and its broad variety of libraries are very well suited to develop customized machine learning tools which tackle the complex challenges posed by financial time series.
+- This program is currently limited in capabilities as it has been created according to the normal command terminal and not the powershell. Editing it to make it compatible with powershell can greatly improve capabilities such as directory and file management
