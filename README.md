@@ -10,3 +10,4 @@
 - [Kubectl installation location]/kubectl
 # Additional INFO
 -Enter any additional info below in points(must be easily understandable)-
+- This program is currently limited in capabilities as it has been created according to the normal command terminal and not the powershell. Editing it to make it compatible with powershell can greatly improve capabilities such as directory and file management
